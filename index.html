@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 3</title>
+
+
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="stylesheet" href="./New folder/normalise.css">
+
+
+    <link rel="stylesheet" href="./New folder/all.min.css">
+</head>
+<body>
+
+    <div class="textBox">
+        <p  id="textBoxStyled"> 
+            Here is  a paragraph of text that  has various  aliment  characteristics  that 
+            can be changed dynamiclay. Click the radio button below to view combinations 
+            of text style settings.
+        </p>
+    </div>
+
+    <div  class="holder">
+        <div   >
+            <p> Font Family </p>
+            <div >
+                <input type="radio" name="fontFamily" id="arial" value="arial" onclick="changeTextBoxStyle('fontFamily', 'arial')"  />
+                <label for=""> arial </label>
+                <br />
+
+                <input type="radio" name="fontFamily" id="courier"   value="courier"  onclick="changeTextBoxStyle('fontFamily', 'courier')" />
+                <label for=""> courier </label>
+                <br />
+
+                <input type="radio" name="fontFamily" id="georgia"    value="georgia"    onclick="changeTextBoxStyle('fontFamily', 'georgia')"/>
+                <label for=""> georgia </label>
+                <br />
+
+                <input type="radio" name="fontFamily" id="impact"    value="impact"   onclick="changeTextBoxStyle('fontFamily', 'impact')"/>
+                <label for=""> impact </label>
+                <br />
+
+                <input type="radio" name="fontFamily" id="times new roman"  value="Times New Roman"    onclick="changeTextBoxStyle('fontFamily', 'Times New Roman')" />
+                <label for=""> times new roman </label>
+                <br />
+
+                <input type="radio" name="fontFamily" id="verdana"   value="verdana"   onclick="changeTextBoxStyle('fontFamily', 'verdana')"/>
+                <label for=""> verdana </label>
+                <br />
+
+            </div>
+        </div>
+
+        <div   class="checker">
+            <p> TextAlign </p>
+            <div >
+                <input type="radio" name="textAlign" id="left"  value="left"   onclick="changeTextBoxStyle('textAlign', 'left')"/>
+                <label for=""> left </label>
+                <br />
+                
+                <input type="radio" name="textAlign" id="center"  value="center"   onclick="changeTextBoxStyle('textAlign', 'center')" />
+                <label for=""> center </label>
+                <br />
+
+                <input type="radio" name="textAlign" id="right"  value="right"   onclick="changeTextBoxStyle('textAlign', 'right')" />
+                <label for=""> right </label>
+                <br />
+
+                <input type="radio" name="textAlign" id="justifiy"  value="justifiy"  onclick="changeTextBoxStyle('textAlign', 'justifiy')"  />
+                <label for=""> justifiy </label>
+            </div>
+        </div>
+
+        <div  class="checker"   >
+            <p> LineHeight </p>
+            <div >
+                <input type="radio" name="lineHeight" id="normal"  value="normal"  onclick="changeTextBoxStyle('lineHeight', 'normal')"/>
+                <label for=""> normal </label>
+                <br />
+
+                <input type="radio" name="lineHeight" id="10px" value="10px"   onclick="changeTextBoxStyle('lineHeight', '10px')"/>
+                <label for=""> 10px </label>
+                <br />
+
+                <input type="radio" name="lineHeight" id="15px" value="15px"  onclick="changeTextBoxStyle('lineHeight', '15px')"/>
+                <label for=""> 15px </label>
+                <br />
+
+                <input type="radio" name="lineHeight" id="1.5" value="1.5"   onclick="changeTextBoxStyle('lineHeight', '1.5')"/>
+                <label for=""> 1.5 </label>
+
+            </div>
+        </div>
+
+        <div  class="checker"  style="display: block;">
+            <p> LetterSpacing  </p>
+            <div  style="display: block;">
+                <input type="radio" name="letterSpacing" id="normal" value="normal"   onclick="changeTextBoxStyle('letterSpacing', 'normal')" />
+                <label for=""> normal </label>
+                <br />
+                <input type="radio" name="letterSpacing" id="-1px"  alue="-1px"   onclick="changeTextBoxStyle('letterSpacing', '-1px')"/>
+                <label for=""> -1px </label>
+                <br />
+                <input type="radio" name="letterSpacing" id="2px" alue="2px"  onclick="changeTextBoxStyle('letterSpacing', '2px')" />
+                <label for=""> 2px </label>
+                <br />
+                <input type="radio" name="letterSpacing" id="3px"  alue="3px"  onclick="changeTextBoxStyle('letterSpacing', '3px')"/>
+                <label for=""> 3px </label>
+            </div>
+        </div>
+
+
+        <div  class="checker"  style="display: block;">
+            <p> textIndent  </p>
+            <div  style="display: block;">
+                <input type="radio" name="textIndent" id="0px"   value="0px"  onclick="changeTextBoxStyle('textIndent', '0px')"/>
+                <label for=""> 0px </label>
+                <br />
+
+                <input type="radio" name="textIndent" id="5px"  value="5px"  onclick="changeTextBoxStyle('textIndent', '5px')" />
+                <label for=""> 5px </label>
+                <br />
+
+                <input type="radio" name="textIndent" id="15px"  value="15px"  onclick="changeTextBoxStyle('textIndent', '15px')" />
+                <label for=""> 15px </label>
+                <br />
+
+                <input type="radio" name="textIndent" id="25px"  value="25px"  onclick="changeTextBoxStyle('textIndent', '25px')"/>
+                <label for=""> 25px </label>
+            </div>
+        </div>
+
+        <div class="checker"  style="display: block;">
+            <p> textTransform </p>
+            <div  style="display: block;">
+                <input type="radio" name="textTransform" id="none" value="none"   onclick="changeTextBoxStyle('textTransform', 'none')"/>
+                <label for=""> none </label>
+                <br />
+                <input type="radio" name="textTransform" id="capitalize" value="capitalize" onclick="changeTextBoxStyle('textTransform', 'capitalize')"  />
+                <label for=""> capitalize </label>
+                <br />
+                <input type="radio" name="textTransform" id="uppercase" value="uppercase"  onclick="changeTextBoxStyle('textTransform', 'uppercase')" />
+                <label for=""> uppercase </label>
+                <br />
+                <input type="radio" name="textTransform" id="lowercase"  value="lowercase" onclick="changeTextBoxStyle('textTransform', 'lowercase')" />
+                <label for=""> lowercase </label>
+            </div>
+        </div>
+
+        <div class="checker"  style="display: block;">
+            <p> textDecoration </p>
+            <div  style="display: block;">
+                <input type="radio" name="textDecoration" id="none"  value="none"  onclick="changeTextBoxStyle('textDecoration', 'none')"  />
+                <label for=""> none </label>
+                <br />
+                <input type="radio" name="textDecoration" id="line-through"   value="line-through" onclick="changeTextBoxStyle('textDecoration', 'line-through')"  />
+                <label for=""> ine-through </label>
+                <br />
+                <input type="radio" name="textDecoration" id="overline"   value="overline"  onclick="changeTextBoxStyle('textDecoration', 'overline')" />
+                <label for=""> overline </label>
+                <br />
+                <input type="radio" name="textDecoration" id="underline"  value="underline"  onclick="changeTextBoxStyle('textDecoration', 'underline')" />
+                <label for=""> underline </label>
+            </div>
+        </div>
+
+        <div class="checker"  style="display: block;">
+            <p> textBorder </p>
+            <div  style="display: block;">
+                <input type="radio" name="border" id="none"  value="none"  onclick="changeTextBoxStyle('border', 'none')" />
+                <label for=""> none </label>
+                <br />
+
+                <input type="radio" name="border" id="dotted" value="dotted"  onclick="changeTextBoxStyle('border', 'dotted')" />
+                <label for=""> dotted </label>
+                <br />
+
+                <input type="radio" name="border" id="double" value="double"  onclick="changeTextBoxStyle('border', 'double')" />
+                <label for=""> double </label>
+                <br />
+
+                <input type="radio" name="border" id="groove"  value="groove" onclick="changeTextBoxStyle('border', 'groove')"  />
+                <label for=""> groove </label>
+                <br />
+
+                <input type="radio" name="border" id="dashed" value="dashed"  onclick="changeTextBoxStyle('border', 'dashed')"/>
+                <label for=""> dashed </label>
+                <br />
+
+                <input type="radio" name="border" id="insert" value="insert"  onclick="changeTextBoxStyle('border', 'insert')" />
+                <label for=""> insert </label>
+                <br />
+
+                <input type="radio" name="border" id="solid" value="solid"  onclick="changeTextBoxStyle('border', 'solid')" />
+                <label for=""> solid </label>
+                <br />
+
+                <input type="radio" name="border" id="outset" value="outset"  onclick="changeTextBoxStyle('border', 'outset')" />
+                <label for=""> outset </label>
+                <br />
+
+                <input type="radio" name="border" id="ridge" value="ridge"   onclick="changeTextBoxStyle('border', 'ridge')"/>
+                <label for=""> ridge </label>
+                <br />
+
+            </div>
+        </div>
+
+
+        <div  class="checker"  style="display: block;">
+            <p>  BorderColor  </p>
+            <div  style="display: block;">
+                <input type="radio" name="borderColor" id="none"  value="none"  onclick="changeTextBoxStyle('borderColor', 'none')" />
+                <label for="none"> none </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="pink" value="pink"  onclick="changeTextBoxStyle('borderColor', 'pink')" />
+                <label for="pink"> pink </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="red" value="red"   onclick="changeTextBoxStyle('borderColor', 'red')" />
+                <label for="red"> red </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="green"  value="green"   onclick="changeTextBoxStyle('borderColor', 'green')"/>
+                <label for="green"> green </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="blue" value="blue"  onclick="changeTextBoxStyle('borderColor', 'blue')" />
+                <label for="blue"> blue </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="yellow"  value="yellow"  onclick="changeTextBoxStyle('borderColor', 'yellow')" />
+                <label for="yellow"> yellow </label>
+                <br />
+
+                <input type="radio" name="borderColor" id="purple"  value="purple"  onclick="changeTextBoxStyle('borderColor', 'purple')"  />
+                <label for="purple"> purple </label>
+                <br />
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script  src="./main.js">  </script>
+    
+</body>
+</html>

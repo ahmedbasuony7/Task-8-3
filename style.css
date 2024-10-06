@@ -1,0 +1,35 @@
+
+
+.holder  {
+    display: flex;
+    gap: 20px;
+    border: 2px solid  black;
+    width: 1120px;
+    margin: 20px 40px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.holder .checker {
+    padding: 0px 5px;
+    border-left: 2px solid  black;
+
+}
+input[type="radio"] {
+    margin-top: 5px;
+    font-family:'Times New Roman', Times, serif;
+}
+input[type="radio"]:first-child {
+    margin-top: 0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+p {
+    font-weight: bold;
+}
+.textBox {
+    margin: 20px 40px;
+    width: 1000px;
+    padding: 10px;
+    font-size: 17px;
+}
